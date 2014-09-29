@@ -31,7 +31,7 @@ public class questions
 		answerGUI = JOptionPane.showInputDialog("Hi, " + answerGUI + " How are you today?");
 		answerGUI = JOptionPane.showInputDialog("''" + answerGUI + "''? Well that's good, what's your favorite color?");
 		answerGUI = JOptionPane.showInputDialog("I don't like the color " + answerGUI + " because I am colorblind... Now tell me your age:");
-		if(answerGUI.equals("42"))
+		if(answerGUI.equals("42") || answerGUI.equalsIgnoreCase("Forty Two"))
 		{
 			JOptionPane.showMessageDialog(null, "What a peculiar age...");
 			JOptionPane.showMessageDialog(null, "Yeah, I am just gonna leave...");
@@ -43,7 +43,7 @@ public class questions
 			JOptionPane.showMessageDialog(null, "Like, forever...");
 			JOptionPane.showMessageDialog(null, "What did you say to him?");
 			answerGUI = JOptionPane.showInputDialog("That you are " + answerGUI + " years old? He for some reason hates the number " +answerGUI+ "... Anyway, what is YOUR favorite number?");
-			if(answerGUI.equals("42"))
+			if(answerGUI.equals("42") || answerGUI.equalsIgnoreCase("Forty Two"))
 			{
 				JOptionPane.showMessageDialog(null, "The replacement bot has left...");
 			}
